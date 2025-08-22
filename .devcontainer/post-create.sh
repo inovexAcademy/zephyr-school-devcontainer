@@ -3,9 +3,20 @@
 REPO_NAME=$1
 ZEPHYR_BRANCH=$2
 
-# Create Python venv
+set -e
+
+# Enter workspace
 cd /workspace
-python -mvenv .venv
+
+# Setup VS Code
+if [ ! -d ".vscode" ]; then
+    ln -s $REPO_NAME/.vscode
+fi
+
+# Create Python venv
+if [ ! -d ".venv" ]; then
+    python -mvenv .venv
+fi
 . .venv/bin/activate
 pip install --upgrade pip
 pip install west
