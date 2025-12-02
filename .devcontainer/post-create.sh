@@ -24,6 +24,11 @@ pip install west
 # Setup Zephyr
 if [ ! -d ".west" ]; then
 	west init -m https://github.com/zephyrproject-rtos/zephyr --mr $ZEPHYR_BRANCH
+else
+    cd zephyr
+    git remote update
+    git checkout $ZEPHYR_BRANCH
+    cd ..
 fi
 
 west update
