@@ -5,11 +5,11 @@
         // Specify version for Zephyr Container
         // See https://github.com/zephyrproject-rtos/docker-image/releases
         "args": {
-            "ZEPHYR_TAG": "v0.28.4"
+            "ZEPHYR_TAG": "v0.28.7"
         }
     },
     // Run setup tasks in container
-    "postCreateCommand": "bash ${localWorkspaceFolderBasename}/.devcontainer/post-create.sh ${localWorkspaceFolderBasename} v4.2-branch",
+    "postCreateCommand": "bash ${localWorkspaceFolderBasename}/.devcontainer/post-create.sh ${localWorkspaceFolderBasename} v4.3-branch",
     // Needed for USB devices in container
     "privileged": true,
     // Mount and set workspace folder
