@@ -69,15 +69,15 @@ After the build is done (takes a few seconds on modern hardware) the output shou
 
 ```
 -- west build: building application
-[1/144] Preparing syscall dependency handling
+[1/163] Preparing syscall dependency handling
 
-[2/144] Generating include/generated/zephyr/version.h
--- Zephyr version: 4.2.0 (/workspace/zephyr), build: v4.2.0-26-g8b5e0388cf34
-[144/144] Linking C executable zephyr/zephyr.elf
+[2/163] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.0 (/workspace/zephyr), build: v4.4.0
+[163/163] Linking C executable zephyr/zephyr.elf
 Memory region         Used Size  Region Size  %age Used
-           FLASH:       18588 B         1 MB      1.77%
-             RAM:        4480 B       256 KB      1.71%
-        IDT_LIST:          0 GB        32 KB      0.00%
-Generating files from /workspace/build/zephyr/zephyr.elf for board: nrf52840dk
-(.venv) user@0356b1301ab4:/workspace$
+           FLASH:       19924 B         1 MB      1.90%
+             RAM:        4544 B       256 KB      1.73%
+        IDT_LIST:           0 B        32 KB      0.00%
+Generating files from /workspace/build/zephyr/zephyr.elf for board: nrf52840dk/nrf52840
+(.venv) user@aeccb2449895:/workspace$
 ```
